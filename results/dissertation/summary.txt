@@ -1,0 +1,6 @@
+lattice sizes: [16, 32, 40, 64, 80, 128]
+Tc from chi_max extrapolation : 2.264
+Tc from m = 0                 : 2.264
+gamma/nu from chi_max         : 1.751
+exact Tc (Onsager)            : 2.2692
+growth exponent alpha (L=512) : 0.522

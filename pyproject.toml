@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Ising2D-MC"
+version = "0.1.0"
+description = "Monte Carlo simulation of the 2D Ising model: critical phenomena and phase-ordering kinetics"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "pandas", "matplotlib", "numba"]
+
+[project.optional-dependencies]
+dist = ["pyarrow"]            # only for the magnetisation distribution curves
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+
+# simulation output: per-seed files and merged distribution files can be huge
+runs/
+*.parquet
+merged_*.csv
+Run_no_*_Dist_Curve.csv
